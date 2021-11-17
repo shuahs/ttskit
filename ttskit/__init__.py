@@ -55,7 +55,6 @@ import encoder
 import mellotron
 import waveglow
 import resource
-from sdk_api import tts_sdk as tts
 
 __version__ = "0.2.1"
 
