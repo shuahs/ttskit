@@ -49,8 +49,3 @@ def tts_web():
     audio = data.get('audio', '24')
     wav = sdk_api.tts_sdk(text=text, speaker=speaker, audio=audio)
     return Response(wav, mimetype='audio/wav')
-
-
-if __name__ == "__main__":
-    logger.info(__file__)
-    app.run(host='0.0.0.0', port=2718, debug=False)
